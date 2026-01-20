@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Gogishvili's restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">Gogishvili's</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Main</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+            <div class="burger"><div></div><div></div><div></div></div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="form-wrapper">
+            <h2>მაგიდის რეზერვაცია</h2>
+            <form id="bookingForm" novalidate>
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="თქვენი სახელი" required>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="მეილი (example@mail.com)" required>
+                </div>
+                <div class="input-group password-wrapper">
+                    <input type="password" id="password" placeholder="რეზერვაციის კოდი" required>
+                    <label class="show-pass">
+                        <input type="checkbox" id="showPass"> Show
+                    </label>
+                </div>
+                <button type="submit" class="btn">Confirm your reservation</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
